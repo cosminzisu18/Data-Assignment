@@ -1,19 +1,19 @@
 # Data-Assignment
 This Python project uses Pandas to process and merge data from three CSV files (Facebook, Google, and Website) about companies. The program combines information from these files, improving the visibility and accuracy of data for company names, categories, addresses, and phone numbers.
 
-# Raspunsuri la intrebari:
+## Raspunsuri la intrebari:
 
-## Ce coloană am folosit pentru a face join-ul?
+### Ce coloană am folosit pentru a face join-ul?
 
 Am ales din cele trei CSV-uri coloana care conținea numele firmei. Am uniformizat această coloană prin normalizarea și convertirea numelor la același format în toate CSV-urile, apoi am folosit-o ca punct de referință pentru a face join-ul între seturile de date.
 
-## Cum am rezolvat conflictele de date după join?
+### Cum am rezolvat conflictele de date după join?
 
 Am întâlnit conflicte în numerele de telefon și am decis să păstrez numărul care apare de cele mai multe ori în seturile de date. În ceea ce privește adresele, am prioritizat CSV-ul care conținea datele de la Google, deoarece mi s-a părut cel mai bine structurat. Dacă adresa din Google lipsea, am ales adresa din CSV-ul cu datele de la Facebook, iar în cazul în care nici aici nu erau informații, am construit o adresă din coloanele disponibile în datele provenite din website.
 
 Un alt conflict a apărut la coloana cu categoriile. În acest caz, am combinat toate categoriile disponibile, unind categoriile similare și separându-le pe cele diferite prin caracterul |, creând astfel un set complet de categorii pentru fiecare firmă.
 
-## Cum am tratat datele foarte similare?
+### Cum am tratat datele foarte similare?
 
 Date similare au apărut în coloana company_name. Am unit firmele care aveau același număr de telefon, iar în cazurile în care numele firmei diferă ușor, am păstrat numele cel mai lung, care conținea fie numele complet al firmei, fie elemente comune din toate celelalte nume sau fragmente de nume. Astfel, am redus duplicările și am creat un set unitar de date pentru fiecare companie.
 
