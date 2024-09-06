@@ -18,7 +18,9 @@ Un alt conflict a apărut la coloana cu categoriile. În acest caz, am combinat 
 Date similare au apărut în coloana company_name. Am unit firmele care aveau același număr de telefon, iar în cazurile în care numele firmei diferă ușor, am păstrat numele cel mai lung, care conținea fie numele complet al firmei, fie elemente comune din toate celelalte nume sau fragmente de nume. Astfel, am redus duplicările și am creat un set unitar de date pentru fiecare companie.
 
 
-## Importuri și Biblioteci:
+## Explicație pentru funcții
+
+### importuri și biblioteci:
 
 import pandas as pd: Importă biblioteca Pandas pentru manipularea și analiza datelor în DataFrame-uri.
 import re: Importă biblioteca re pentru manipularea expresiilor regulate, utilizată pentru curățarea și normalizarea textului.
