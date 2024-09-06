@@ -22,9 +22,9 @@ Date similare au apărut în coloana company_name. Am unit firmele care aveau ac
 
 ### importuri și biblioteci:
 
-import pandas as pd: Importă biblioteca Pandas pentru manipularea și analiza datelor în DataFrame-uri.
-import re: Importă biblioteca re pentru manipularea expresiilor regulate, utilizată pentru curățarea și normalizarea textului.
-from collections import Counter: Importă Counter din collections pentru numărarea frecvenței elementelor într-o listă.
+- import pandas as pd: Importă biblioteca Pandas pentru manipularea și analiza datelor în DataFrame-uri.
+- import re: Importă biblioteca re pentru manipularea expresiilor regulate, utilizată pentru curățarea și normalizarea textului.
+- from collections import Counter: Importă Counter din collections pentru numărarea frecvenței elementelor într-o listă.
 
 ### 1. load_and_rename_csv:
   Încarcă un fișier CSV și redenumește coloanele conform unui dicționar de mapare specificat. Acest lucru ajută la uniformizarea denumirilor coloanelor între diferite surse de date.
